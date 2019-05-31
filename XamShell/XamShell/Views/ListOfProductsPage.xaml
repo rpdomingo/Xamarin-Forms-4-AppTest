@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamShell.Views.ListOfProductsPage"
+             Visual="Material"
+             xmlns:local="clr-namespace:XamShell.Views"
+             xmlns:controls="clr-namespace:XamShell.Controls">
+
+    <!--<Shell.FlyoutHeader>
+        <controls:FlyoutHeader/>
+    </Shell.FlyoutHeader>-->
+
+    <!-- Your Pages -->
+    <TabBar>
+        <Tab Title="Browse" Icon="tab_feed.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
+        <Tab Title="About" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </TabBar>
+
+    <!--<FlyoutItem Title="test"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Browse" Icon="tab_feed.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
+        <Tab Title="About" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </FlyoutItem>-->
+    <!--<local:ItemsPage />-->
+
+    <!--<ShellItem>
+        <ShellSection>
+            <ShellContent>
+                <local:ItemsPage />
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>-->
+   
+ 
+        <local:ItemsPage/>
+   
+</Shell>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:XamShell.Views"
+             mc:Ignorable="d"
+             Visual="Material"
+             x:Class="XamShell.Views.MainShellPage">
+    <ShellItem Title="Example">
+        <ShellSection Title="Main Page"
+                      Icon="tab_about.png">
+            <ShellContent >
+                <local:MainPage/>
+            </ShellContent>
+        </ShellSection>
+        
+        <ShellSection Title="Secondary Page"
+                      Icon="tab_feed.png">
+            <ShellContent>
+                <local:SecondaryPage/>
+            </ShellContent>
+        </ShellSection>
+
+        <ShellSection Title="Third Page"
+                      Icon="tab_feed.png">
+            <ShellContent>
+                <local:SecondaryPage/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+
+    <ShellItem Title="Another One">
+        <ShellSection Title="Main Page"
+                      Icon="tab_about.png">
+            <ShellContent >
+                <local:MainPage/>
+            </ShellContent>
+        </ShellSection>
+
+        <ShellSection Title="Secondary Page"
+                      Icon="tab_feed.png">
+            <ShellContent>
+                <local:SecondaryPage/>
+            </ShellContent>
+        </ShellSection>
+
+        <ShellSection Title="Fourth Page"
+                      Icon="tab_feed.png">
+            <ShellContent>
+                <local:SecondaryPage/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+</Shell>
